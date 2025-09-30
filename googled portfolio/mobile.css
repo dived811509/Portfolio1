@@ -1,0 +1,405 @@
+@media(max-width:800px){
+nav{
+position: fixed;
+z-index: 3;
+}
+.hamburger{
+display:block;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 50%;
+transform: translate(-5%, -50%);
+z-index: 2;
+transition: all 0.2s ease;
+}
+.navstr.dark .hamburger div{
+background: #fcfbf4;
+}
+.nav-links{
+position: fixed;
+background: #fcfbf4;
+height: 100vh;
+width: 100%;
+flex-direction: column;
+clip-path: circle(50px at 90% -20%);
+-webkit-clip-path: circle(50px at 90% -10%);
+transition: all 1s ease-out;
+pointer-events: none;
+}
+.nav-links.open{
+clip-path: circle(1000px at 90% -10%);
+-webkit-clip-path: circle(1000px at 90% -10%);
+pointer-events: all;
+}
+.nav-links li{
+opacity: 0;
+margin-top: 30px;
+}
+.nav-links li:nth-child(1){
+transition: all 0.5s ease 0.2s;
+margin-top: 200px;
+}
+.nav-links li:nth-child(2){
+transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3){
+transition: all 0.5s ease 0.6s;
+}
+.nav-links li:nth-child(4){
+transition: all 0.5s ease 0.7s;
+}
+li.fade{
+opacity: 1;
+}
+.content{
+padding-top: 350px;
+padding-left: 30px;
+width: fill;
+font-family: Product Sans;
+}
+.home .context .title{
+position: absolute;
+margin-top: -80px;
+margin-left: -2px;
+font-size: 3rem;
+padding-right: 20px;
+}
+.home .context .subtitle{
+position: absolute;
+font-size: 20px;
+width: 200px;
+margin-top: -30px;
+padding-right: 20px;
+margin-left: 1px;
+}
+.social{
+margin-top: 50px;
+margin-left: -20px;
+padding: 0;
+}
+.social ul{
+display: inline-flex;
+margin: 0;
+padding: 0;
+list-style: none;
+font-family: Product Sans;
+margin-left: 5px;
+}
+.social ul li{
+text-decoration: none;
+padding: 20px 15px 10px 15px;
+margin: 0;
+}
+.social ul li a{
+color: #000;
+}
+.homedoodle{
+position: relative;
+transform: scale(1.6);
+}
+.homeanime{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+margin-top: -220px;
+}
+.svgstatic svg{
+position: relative;
+height: 300px;
+width: 100%;
+padding-top: 0;
+animation: svgstatic 3s linear infinite;
+}
+@keyframes svgstatic{
+0%{
+padding-top: 0;
+}
+50%{
+padding-top: 5%;
+}
+100%{
+padding-top: 0;
+}
+}
+.svganime1{
+position: absolute;
+margin-top: 4%;
+margin-left: 5%;
+}
+.svganime1 svg{
+position: relative;
+height: 300px;
+width: 100%;
+}
+.svganime2{
+position: absolute;
+margin-top: 55%;
+margin-left: 55%;
+}
+.svganime2 svg{
+position: relative;
+height: 30px;
+width: 100%;
+animation: svganime2 4s linear infinite;
+}
+@keyframes svganime2{
+0%{
+padding-top: 0;
+transform: rotate(0deg);
+}
+50%{
+padding-top: 10%;
+transform: rotate(10deg);
+}
+100%{
+padding-top: 0;
+transform: rotate(0deg);
+}
+}
+.svganime3{
+position: absolute;
+margin-top: 70%;
+margin-left: 27%;
+}
+.svganime3 svg{
+position: relative;
+height: 35px;
+width: 70px;
+animation: svganime3 2.6s linear infinite;
+}
+@keyframes svganime3{
+0%{
+padding-left: 0;
+}
+50%{
+padding-left: 8%;
+}
+100%{
+padding-left: 0;
+}
+}
+.svganime4{
+position: absolute;
+width: 130px;
+margin-left: 10%;
+}
+.svganime4 svg{
+position: relative;
+height: 280px;
+width: 100%;
+animation: svganime4 2.6s linear infinite;
+}
+@keyframes svganime4{
+0%{
+padding-left: 0;
+transform: rotate(0deg);
+}
+50%{
+transform: rotate(7deg);
+}
+100%{
+transform: rotate(0deg);
+}
+}
+.svganime5{
+position: absolute;
+width: 40px;
+margin-top: 63%;
+margin-left: 77%;
+}
+.svganime5 svg{
+position: relative;
+height: 100px;
+width: 100%;
+animation: svganime5 2.6s linear infinite;
+}
+@keyframes svganime5{
+0%{
+padding-left: 0;
+transform: rotate(0deg);
+}
+50%{
+transform: rotate(10deg);
+}
+100%{
+transform: rotate(0deg);
+}
+}
+.about .aboutcontainer{
+margin-top: 200px;
+}
+.about .footer{
+font-size: 25px;
+}
+.container .skills .title{
+font-size: 60px;
+transform: translate(-63.425px,0);
+}
+.skills .pskills .pbars{
+transform: scale(0.4);
+}
+.pskills .ptitle{
+text-align: center;
+}
+.skills .pskills .ptitle{
+font-size: 35px;
+margin-top: -20px;
+}
+.pskills .pbars{
+margin-top: -120px;
+padding-bottom: 0px;
+}
+.skills .sskills{
+margin-top: -100px;
+}
+.skills .sskills .stitle{
+font-size: 35px;
+}
+.skills .sskills .tilecontainer{
+margin-top: 40px;
+}
+.skills .sskills .tilecontainer .tile{
+padding: 10px;
+}
+.skills .sskills .tilecontainer .tile .sname{
+height: 100px;
+width: 200px;
+border-radius: 30px;
+align-items: center;
+justify-content: center;
+font-size: 25px;
+font-weight: 600;
+}
+.skills .intrest .ititle{
+font-size: 35px;
+}
+.skills .intrest .icontainer{
+margin-top: -50px;
+}
+.skills .intrest .icontainer .itile{
+display: inline-flex;
+align-items:center;
+justify-content: center;
+height: fit-content;
+width: fit-content;
+padding: 10px 5px 10px 5px;
+}
+.skills .intrest .icontainer .itile .iname{
+display: flex;
+height: 100px;
+width: 100px;
+border-width: 5px;
+border-radius: 30px;
+align-items: center;
+justify-content: center;
+}
+.skills .intrest .icontainer .itile .iname svg{
+display: block;
+height: 40px;
+width: 40px;
+}
+.skills .intrest .icontainer .itile:hover .iname svg{
+display: block;
+height: 40px;
+width: 40px;
+animation: svganime 0.2s linear infinite;
+}
+.skills .intrest .icontainer{
+margin-top: 70px;
+}
+.container .works{
+margin-bottom: -250px;
+}
+.works .websites{
+display: flex;
+justify-content: center;
+max-height: fill;
+width: 1200px;
+max-width: 1200px;
+margin-top: 0px;
+height: fit-content;
+}
+.works .wotitle{
+position: absolute;
+font-size: 60px;
+}
+.websites .wtitle{
+position: absolute;
+margin-top: 100px;
+font-size: 35px;
+}
+.websites ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: block;
+height: fit-content;
+width: fill;
+padding: 20px;
+margin-top: -150px;
+transform: scale(0.36);
+}
+.websites ul li .wname{
+font-size: 40px;
+margin-left: 40px;
+cursor: default;
+}
+.imgfolio .imgtitle{
+position: absolute;
+margin-top: 50px;
+font-size: 60px;
+}
+.imgfolio .pcontainer{
+max-width:fill;
+width: fill;
+padding: 10px;
+margin-top: 250px;
+}
+.imgfolio .imgbreif{
+position: absolute;
+margin-top: 170px;
+font-size: 30px;
+text-align: center;
+}
+.gallery {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.gallery-item {
+position: relative;
+margin: 2.5px;
+overflow: hidden;
+border-radius: 25px;
+transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+transform: scale(1.05);
+}
+.gallery-item img {
+display: block;
+width: 100%;
+height: 200px;
+border-radius: 25px;
+}
+.ccontainer{
+margin-top: 0px;
+margin-bottom: -100px;
+display: flex;
+justify-content: center;
+transform: scale(0.7);
+}
+.ccontainer .ctitle{
+position: absolute;
+display: block;
+font-size: 45px;
+font-weight: 800;
+}
+button{
+top: -50px;
+right: -50px;
+transform: scale(0.17);
+}
+}
